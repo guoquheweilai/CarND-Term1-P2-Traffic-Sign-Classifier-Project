@@ -18,7 +18,7 @@ pip install opencv-python
 3. Need subdirectory "new_images_data"
 
 ### an overview of the project
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. Specifically, you'll train a model to classify traffic signs from the German Traffic Sign Dataset.
+In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. Specifically, you'll train a model to classify traffic signs from the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset).
 
 Before submitting, make sure your project covers all of the rubric points, which can be found [here](https://review.udacity.com/#!/rubrics/481/view).
 
