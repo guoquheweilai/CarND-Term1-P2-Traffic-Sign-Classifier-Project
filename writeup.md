@@ -91,7 +91,7 @@ My final model consisted of the following layers:
 | Fully connected		|   outputs 120						|
 | Fully connected		|   outputs 84						|
 | Fully connected		|   outputs 43						|
-|						|												|
+|	Softmax					|												|
 |						|												|
  
 
@@ -121,15 +121,61 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
+My answer: here is my first architecture which comes from LeNet-5 since this would be a good starting point.
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32x1 Grey image   							| 
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 5x5	    | 1x1 stride, valid padding, outputs 10x10x6     									|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten      |     outputs 400
+| Fully connected		|   outputs 120						|
+| Fully connected		|   outputs 84						|
+| Fully connected		|   outputs 43						|
+|	Softmax					|												|
+|						|												|
+
 * What were some problems with the initial architecture?
+
+My answer: The accuracy is between 0.863 and 0.895. And I observed both the valid accuracy and test accuracy are low. Therefore, a underfitting might exist.
+
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
+My answer: Drop out regularation was added after the convolution layers before the flatten layer. With epoch = 40, it can provide high accuracy for both valid and test dataset.
+
 * Which parameters were tuned? How were they adjusted and why?
+
+My answer:  The following parameter were tuned
+
+| Parameters | Initial value | Final value | Procedure description |
+|:---------------:|:-----------------:| :---------------:|  :---------------:| 
+| EPOCHS | 20 | 40 | Try differet epches like 60 and 80, and found 40 is good enough to have test accuracy above 0.93 |
+| keep_prob | None | 0.5 | Add drop out regularization after convolution layers, and found 0.5 is good enough |
+| rate | 0.001 | 0.001 | Try different learning rates like 0.0005 and 0.0001, and found 0.001 is good enough once we have the drop out regularization |
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
+My anwser: convolution layer can used to capture the charactrer of the images without losing too much information. And a dropout layer can help the model not underfitting/overfitting on the training dataset sicne it can randomly select different dataset to contribute the same result.
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+
+My anwser: LeNet-5
+
 * Why did you believe it would be relevant to the traffic sign application?
+
+My anwser: Because it is the first one I knew and learned.
+
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+ 
+ My anwser: Yes, they are working well since the accuracy of validation and test dataset are higher than 0.93 and the number are almost equal to each other.
+ 
  
 ### Please accept my incompletion this time, my AWS service was not approved until 11/13/2017 12:17 AM even though I submitted my request on 11/08/2017 12:08 AM. I managed to finish the first part of the project but need more time and effort on the second part. For future suggestions, please alarm the students ahead of time about this potential delay.
 ###Test a Model on New Images
