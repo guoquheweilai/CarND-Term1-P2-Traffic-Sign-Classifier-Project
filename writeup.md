@@ -1,8 +1,7 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+## This writeup file is created from Writeup Template provided by Udacity.
+## All rights reserved by Udacity
 
 ---
 
@@ -80,13 +79,18 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		| 32x32x1 Grey image   							| 
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 5x5	    | 1x1 stride, valid padding, outputs 10x10x6     									|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Drop out       | keep_prob = 0.5     |
+| Flatten      |     outputs 400
+| Fully connected		|   outputs 120						|
+| Fully connected		|   outputs 84						|
+| Fully connected		|   outputs 43						|
 |						|												|
 |						|												|
  
@@ -94,14 +98,26 @@ My final model consisted of the following layers:
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+To train the model, I followed the LeNet-5 to create my own training model based on it.
+Here is a list the parameters
+
+| Parameters | Value | description |
+|:---------------------:|:---------------------------------------------:| :---------------------------------------------:| 
+| EPOCHS | 40 | epochs |
+| BATCH_SIZE | 128 | batch size |
+| mu | 0 | average |
+| sigma | 0.1 | standard deviation |
+| rate | 0.001 | learning rate |
+
+
+
 
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
 * training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* validation set accuracy of 0.957
+* test set accuracy of 0.947
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -115,7 +131,7 @@ If a well known architecture was chosen:
 * Why did you believe it would be relevant to the traffic sign application?
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
-
+### Please accept my incompletion this time, my AWS service was not approved until 11/13/2017 12:17 AM even though I submitted my request on 11/08/2017 12:08 AM. I managed to finish the first part of the project but need more time and effort on the second part. For future suggestions, please alarm the students ahead of time about this potential delay.
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
