@@ -20,12 +20,17 @@ The goals / steps of this project are the following:
 
 [image1]: ./screenshots/original_images.png "Original"
 [image2]: ./screenshots/augmented_images.png "Augmented"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image3]: ./examples/placeholder.png "Traffic Sign 2"
+[image4]: ./new_images_data/00004.jpg "Speed limit (70km/h)"
+[image5]: ./new_images_data/00007.jpg "Speed limit (100km/h)"
+[image6]: ./new_images_data/00011.jpg "Right-of-way at the next intersection"
+[image7]: ./new_images_data/00013.jpg "Yield"
+[image8]: ./new_images_data/00014.jpg "Stop"
+[image9]: ./new_images_data/00017.jpg "No entry"
+[image10]: ./new_images_data/00023.jpg "Slippery road"
+[image11]: ./new_images_data/00025.jpg "Road work"
+[image12]: ./new_images_data/00035.jpg "Ahead only"
+[image13]: ./new_images_data/00040.jpg "Roundabout mandatory"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -175,19 +180,19 @@ My anwser: Because it is the first one I knew and learned.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
  My anwser: Yes, they are working well since the accuracy of validation and test dataset are higher than 0.93 and the number are almost equal to each other.
- 
- 
-### Please accept my incompletion this time, my AWS service was not approved until 11/13/2017 12:17 AM even though I submitted my request on 11/08/2017 12:08 AM. I managed to finish the first part of the project but need more time and effort on the second part. For future suggestions, please alarm the students ahead of time about this potential delay.
+
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are ten German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image10] ![alt text][image11] ![alt text][image12]
+![alt text][image13]
 
-The first image might be difficult to classify because ...
+The 9th image might be difficult to classify because there is shadow on the sign.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -195,31 +200,55 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Speed limit (70km/h)      		| Speed limit (70km/h)   									| 
+| Speed limit (100km/h)     			| Speed limit (100km/h) 										|
+| Right-of-way at the next intersection					| Right-of-way at the next intersection											|
+| Yield	      		| Yield					 				|
+| Stop			| Stop      							|
+| No entry | No entry |
+| Slippery road | Slippery road |
+| Road work | General caution |
+| Ahead only | Ahead only |
+| Roundabout mandatory | Go straight or left |
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 93.8%.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a "Speed limit (70km/h)" sign (probability of 0.999986), and the image does contain a "Speed limit (70km/h)" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 0.999986         			| 4_re   									| 
+| 1.0352e-05     				| 14_re 										|
+| 3.15043e-06					| 1_re											|
+| 9.63804e-08	      			| 8_re					 				|
+| 5.52293e-08				    | 7_re      							|
 
 
-For the second image ... 
+For the second image, the model is relatively sure that this is a "Speed limit (100km/h)" sign (probability of 0.909949), and the image does contain a "Speed limit (100km/h)" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.909949         			| 7_re   									| 
+| 0.0336627     				| 10_re 										|
+| 0.0273038					| 8_re											|
+| 0.0224156	      			| 9_re					 				|
+| 0.00596595				    | 16_re      							|
+
+For the third image, the model is relatively sure that this is a "Right-of-way at the next intersection" sign (probability of 0.996731), and the image does contain a "Right-of-way at the next intersection" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.996731         			| 11_re   									| 
+| 0.0023167     				| 30_re 										|
+| 0.00067211					| 21_re											|
+| 0.000115129	      			| 27_re					 				|
+| 5.14639e-05				    | 23_re      							|
+
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
