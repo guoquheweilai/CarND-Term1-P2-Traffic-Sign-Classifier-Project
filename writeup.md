@@ -278,6 +278,46 @@ For the sixth image, the model is relatively sure that this is a "No entry" sign
 | 2.51324e-12	      			| 10_re					 				|
 | 9.71079e-13				    | 38_re      							|
 
+For the seventh image, the model is relatively sure that this is a "Slippery road" sign (probability of 0.567795), and the image does contain a "Slippery road" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.567795         			| 23_re   									| 
+| 0.42512     				| 19_re 										|
+| 0.00704455					| 20_re											|
+| 3.61435e-05	      			| 30_re					 				|
+| 4.66116e-06				    | 11_re      							|
+
+For the eighth image, the model is relatively sure that this is a "General caution" sign (probability of 1.0), however, the image contains a "Road work" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| 18_re   									| 
+| 4.01071e-11     				| 26_re 										|
+| 1.04885e-11					| 27_re											|
+| 3.73492e-15	      			| 11_re					 				|
+| 1.22789e-20				    | 28_re      							|
+
+For the ninth image, the model is relatively sure that this is a "Ahead only" sign (probability of 1.0), and the image does contain a "Ahead only" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| 35_re   									| 
+| 2.57161e-08     				| 15_re 										|
+| 1.33408e-08					| 33_re											|
+| 8.86282e-09	      			| 9_re					 				|
+| 6.03572e-09				    | 34_re      							|
+
+For the tenth image, the model is relatively sure that this is a "General caution" sign (probability of 0.997141), however, the image contains a "Roundabout mandatoryk" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| 37_re   									| 
+| 0.00285933     				| 40_re 										|
+| 1.51674e-08					| 39_re											|
+| 4.03953e-09	      			| 0_re					 				|
+| 1.12457e-10				    | 1_re      							|
+
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
