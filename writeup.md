@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/ikcGitHub/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
@@ -248,7 +248,35 @@ For the third image, the model is relatively sure that this is a "Right-of-way a
 | 0.000115129	      			| 27_re					 				|
 | 5.14639e-05				    | 23_re      							|
 
+For the fourth image, the model is relatively sure that this is a "Yield" sign (probability of 1.0), and the image does contain a "Yield" sign. The top five soft max probabilities were
 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| 13_re   									| 
+| 1.01012e-23     				| 35_re 										|
+| 2.20637e-26					| 25_re											|
+| 3.48863e-28	      			| 12_re					 				|
+| 7.84227e-29				    | 1_re      							|
+
+For the fifth image, the model is relatively sure that this is a "Stop" sign (probability of 0.99996), and the image does contain a "Stop" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.99996         			| 14_re   									| 
+| 1.26435e-05     				| 38_re 										|
+| 5.91276e-06					| 17_re											|
+| 4.96162e-06	      			| 15_re					 				|
+| 4.14061e-06				    | 3_re      							|
+
+For the sixth image, the model is relatively sure that this is a "No entry" sign (probability of 1.0), and the image does contain a "No entry" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| 17_re   									| 
+| 9.05509e-08     				| 14_re 										|
+| 2.20622e-10					| 9_re											|
+| 2.51324e-12	      			| 10_re					 				|
+| 9.71079e-13				    | 38_re      							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
