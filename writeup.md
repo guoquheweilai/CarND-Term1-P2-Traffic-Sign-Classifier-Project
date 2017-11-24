@@ -235,62 +235,62 @@ For the first image, the model is relatively sure that this is a "Speed limit (7
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.999986         			| Speed limit (70km/h)   									| 
-| 1.0352e-05     				| Stop 										|
-| 3.15043e-06					| Speed limit (30km/h)											|
-| 9.63804e-08	      			| Speed limit (120km/h)					 				|
-| 5.52293e-08				    | Speed limit (100km/h)      							|
+| 0.999999         			| Speed limit (70km/h)   									| 
+| 1.32408e-06    				| Speed limit (30km/h) 										|
+| 1.98939e-08					| Speed limit (20km/h)											|
+| 1.8427e-08	      			| Speed limit (100km/h)					 				|
+| 1.63917e-09				    | Stop      							|
 
 
 For the second image, the model is relatively sure that this is a "Speed limit (100km/h)" sign (probability of 0.909949), and the image does contain a "Speed limit (100km/h)" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.909949         			| Speed limit (100km/h)   									| 
-| 0.0336627     				| No passing for vehicles over 3.5 metric tons 										|
-| 0.0273038					| Speed limit (120km/h)											|
-| 0.0224156	      			| No passing					 				|
-| 0.00596595				    | Vehicles over 3.5 metric tons prohibited      							|
+| 0.793925         			| Speed limit (100km/h)   									| 
+| 0.0793872     				| Speed limit (120km/h) 										|
+| 0.052035					| No passing for vehicles over 3.5 metric tons											|
+| 0.0484755	      			| Speed limit (80km/h)					 				|
+| 0.0215833				    | Ahead only      							|
 
 For the third image, the model is relatively sure that this is a "Right-of-way at the next intersection" sign (probability of 0.996731), and the image does contain a "Right-of-way at the next intersection" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.996731         			| Right-of-way at the next intersection   									| 
-| 0.0023167     				| Beware of ice/snow 										|
-| 0.00067211					| Double curve											|
-| 0.000115129	      			| Pedestrians					 				|
-| 5.14639e-05				    | Slippery road      							|
+| 0.998586         			| Right-of-way at the next intersection   									| 
+| 0.000640106     				| Beware of ice/snow 										|
+| 0.000356154					| Children crossing											|
+| 9.04241e-05	      			| Keep right					 				|
+| 8.29871e-05				    | Double curve      							|
 
 For the fourth image, the model is relatively sure that this is a "Yield" sign (probability of 1.0), and the image does contain a "Yield" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| Yield   									| 
-| 1.01012e-23     				| Ahead only 										|
-| 2.20637e-26					| Road work											|
-| 3.48863e-28	      			| Priority road					 				|
-| 7.84227e-29				    | Speed limit (30km/h)      							|
+| 4.03168e-15     				| Ahead only 										|
+| 3.50637e-24					| Keep right											|
+| 3.2823e-24	      			| Speed limit (50km/h)					 				|
+| 6.55357e-28				    | Go straight or right      							|
 
 For the fifth image, the model is relatively sure that this is a "Stop" sign (probability of 0.99996), and the image does contain a "Stop" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.99996         			| Stop   									| 
-| 1.26435e-05     				| Keep right 										|
-| 5.91276e-06					| No entry											|
-| 4.96162e-06	      			| No vehicles					 				|
-| 4.14061e-06				    | Speed limit (60km/h)      							|
+| 0.999989         			| Stop   									| 
+| 6.91697e-06     				| Turn right ahead 										|
+| 1.57884e-06					| Keep right											|
+| 8.8966e-07	      			| No entry					 				|
+| 6.11881e-07				    | Go straight or right      							|
 
 For the sixth image, the model is relatively sure that this is a "No entry" sign (probability of 1.0), and the image does contain a "No entry" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| No entry   									| 
-| 9.05509e-08     				| Stop 										|
-| 2.20622e-10					| No passing											|
-| 2.51324e-12	      			| No passing for vehicles over 3.5 metric tons					 				|
-| 9.71079e-13				    | Keep right      							|
+| 2.62608e-10     				| Stop 										|
+| 1.7999e-10					| No passing											|
+| 8.78468e-12	      			| End of all speed and passing limits					 				|
+| 9.08832e-13				    | Keep right      							|
 
 For the seventh image, the model is relatively sure that this is a "Slippery road" sign (probability of 0.567795), and the image does contain a "Slippery road" sign. The top five soft max probabilities were
 
