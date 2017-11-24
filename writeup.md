@@ -221,102 +221,102 @@ For the first image, the model is relatively sure that this is a "Speed limit (7
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.999986         			| 4_re   									| 
-| 1.0352e-05     				| 14_re 										|
-| 3.15043e-06					| 1_re											|
-| 9.63804e-08	      			| 8_re					 				|
-| 5.52293e-08				    | 7_re      							|
+| 0.999986         			| Speed limit (70km/h)   									| 
+| 1.0352e-05     				| Stop 										|
+| 3.15043e-06					| Speed limit (30km/h)											|
+| 9.63804e-08	      			| Speed limit (120km/h)					 				|
+| 5.52293e-08				    | Speed limit (100km/h)      							|
 
 
 For the second image, the model is relatively sure that this is a "Speed limit (100km/h)" sign (probability of 0.909949), and the image does contain a "Speed limit (100km/h)" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.909949         			| 7_re   									| 
-| 0.0336627     				| 10_re 										|
-| 0.0273038					| 8_re											|
-| 0.0224156	      			| 9_re					 				|
-| 0.00596595				    | 16_re      							|
+| 0.909949         			| Speed limit (100km/h)   									| 
+| 0.0336627     				| No passing for vehicles over 3.5 metric tons 										|
+| 0.0273038					| Speed limit (120km/h)											|
+| 0.0224156	      			| No passing					 				|
+| 0.00596595				    | Vehicles over 3.5 metric tons prohibited      							|
 
 For the third image, the model is relatively sure that this is a "Right-of-way at the next intersection" sign (probability of 0.996731), and the image does contain a "Right-of-way at the next intersection" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.996731         			| 11_re   									| 
-| 0.0023167     				| 30_re 										|
-| 0.00067211					| 21_re											|
-| 0.000115129	      			| 27_re					 				|
-| 5.14639e-05				    | 23_re      							|
+| 0.996731         			| Right-of-way at the next intersection   									| 
+| 0.0023167     				| Beware of ice/snow 										|
+| 0.00067211					| Double curve											|
+| 0.000115129	      			| Pedestrians					 				|
+| 5.14639e-05				    | Slippery road      							|
 
 For the fourth image, the model is relatively sure that this is a "Yield" sign (probability of 1.0), and the image does contain a "Yield" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| 13_re   									| 
-| 1.01012e-23     				| 35_re 										|
-| 2.20637e-26					| 25_re											|
-| 3.48863e-28	      			| 12_re					 				|
-| 7.84227e-29				    | 1_re      							|
+| 1.0         			| Yield   									| 
+| 1.01012e-23     				| Ahead only 										|
+| 2.20637e-26					| Road work											|
+| 3.48863e-28	      			| Priority road					 				|
+| 7.84227e-29				    | Speed limit (30km/h)      							|
 
 For the fifth image, the model is relatively sure that this is a "Stop" sign (probability of 0.99996), and the image does contain a "Stop" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.99996         			| 14_re   									| 
-| 1.26435e-05     				| 38_re 										|
-| 5.91276e-06					| 17_re											|
-| 4.96162e-06	      			| 15_re					 				|
-| 4.14061e-06				    | 3_re      							|
+| 0.99996         			| Stop   									| 
+| 1.26435e-05     				| Keep right 										|
+| 5.91276e-06					| No entry											|
+| 4.96162e-06	      			| No vehicles					 				|
+| 4.14061e-06				    | Speed limit (60km/h)      							|
 
 For the sixth image, the model is relatively sure that this is a "No entry" sign (probability of 1.0), and the image does contain a "No entry" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| 17_re   									| 
-| 9.05509e-08     				| 14_re 										|
-| 2.20622e-10					| 9_re											|
-| 2.51324e-12	      			| 10_re					 				|
-| 9.71079e-13				    | 38_re      							|
+| 1.0         			| No entry   									| 
+| 9.05509e-08     				| Stop 										|
+| 2.20622e-10					| No passing											|
+| 2.51324e-12	      			| No passing for vehicles over 3.5 metric tons					 				|
+| 9.71079e-13				    | Keep right      							|
 
 For the seventh image, the model is relatively sure that this is a "Slippery road" sign (probability of 0.567795), and the image does contain a "Slippery road" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.567795         			| 23_re   									| 
-| 0.42512     				| 19_re 										|
-| 0.00704455					| 20_re											|
-| 3.61435e-05	      			| 30_re					 				|
-| 4.66116e-06				    | 11_re      							|
+| 0.567795         			| Slippery road   									| 
+| 0.42512     				| Dangerous curve to the left 										|
+| 0.00704455					| Dangerous curve to the right											|
+| 3.61435e-05	      			| Beware of ice/snow					 				|
+| 4.66116e-06				    | Right-of-way at the next intersection      							|
 
 For the eighth image, the model is relatively sure that this is a "General caution" sign (probability of 1.0), however, the image contains a "Road work" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| 18_re   									| 
-| 4.01071e-11     				| 26_re 										|
-| 1.04885e-11					| 27_re											|
-| 3.73492e-15	      			| 11_re					 				|
-| 1.22789e-20				    | 28_re      							|
+| 1.0         			| General caution   									| 
+| 4.01071e-11     				| Traffic signals 										|
+| 1.04885e-11					| Pedestrians											|
+| 3.73492e-15	      			| Right-of-way at the next intersection					 				|
+| 1.22789e-20				    | Children crossing      							|
 
 For the ninth image, the model is relatively sure that this is a "Ahead only" sign (probability of 1.0), and the image does contain a "Ahead only" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| 35_re   									| 
-| 2.57161e-08     				| 15_re 										|
-| 1.33408e-08					| 33_re											|
-| 8.86282e-09	      			| 9_re					 				|
-| 6.03572e-09				    | 34_re      							|
+| 1.0         			| Ahead only   									| 
+| 2.57161e-08     				| No vehicles 										|
+| 1.33408e-08					| Turn right ahead											|
+| 8.86282e-09	      			| No passing					 				|
+| 6.03572e-09				    | Turn left ahead      							|
 
 For the tenth image, the model is relatively sure that this is a "General caution" sign (probability of 0.997141), however, the image contains a "Roundabout mandatoryk" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| 37_re   									| 
-| 0.00285933     				| 40_re 										|
-| 1.51674e-08					| 39_re											|
-| 4.03953e-09	      			| 0_re					 				|
-| 1.12457e-10				    | 1_re      							|
+| 1.0         			| Go straight or left   									| 
+| 0.00285933     				| Roundabout mandatory 										|
+| 1.51674e-08					| Keep left											|
+| 4.03953e-09	      			| Speed limit (20km/h)					 				|
+| 1.12457e-10				    | Speed limit (30km/h)      							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
