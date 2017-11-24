@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./screenshots/original_images.png "Original"
 [image2]: ./screenshots/augmented_images.png "Augmented"
-[image3]: ./examples/placeholder.png "Traffic Sign 2"
+[image3]: ./
 [image4]: ./new_images_data/00004.jpg "Speed limit (70km/h)"
 [image5]: ./new_images_data/00007.jpg "Speed limit (100km/h)"
 [image6]: ./new_images_data/00011.jpg "Right-of-way at the next intersection"
@@ -31,6 +31,12 @@ The goals / steps of this project are the following:
 [image11]: ./new_images_data/00025.jpg "Road work"
 [image12]: ./new_images_data/00035.jpg "Ahead only"
 [image13]: ./new_images_data/00040.jpg "Roundabout mandatory"
+[image14]: ./screenshots/barchart_train.png "Barchart training"
+[image15]: ./screenshots/barchart_valid.png "Barchart validation"
+[image16]: ./screenshots/barchart_test.png "Barchart test"
+
+
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -57,7 +63,13 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here are the exploratory visualization of the data set. These are containing training, validation and test datasets. From the first look, those barcharts are distributed very similar to each other.
+
+![alt text][image14]
+
+![alt text][image15]
+
+![alt text][image16]
 
 ![alt text][image1]
 
