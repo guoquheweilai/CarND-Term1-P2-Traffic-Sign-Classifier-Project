@@ -135,8 +135,8 @@ Here is a list the parameters
 
 My final model results were:
 * training set accuracy of N/A
-* validation set accuracy of 0.957
-* test set accuracy of 0.947
+* validation set accuracy of 0.955
+* test set accuracy of 0.939
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -225,7 +225,7 @@ Here are the results of the prediction:
 | Ahead only | Ahead only |
 | Roundabout mandatory | Go straight or left |
 
-The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 93.8%.
+The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 93.9%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
