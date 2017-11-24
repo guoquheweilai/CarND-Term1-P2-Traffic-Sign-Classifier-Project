@@ -296,41 +296,41 @@ For the seventh image, the model is relatively sure that this is a "Slippery roa
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.567795         			| Slippery road   									| 
-| 0.42512     				| Dangerous curve to the left 										|
-| 0.00704455					| Dangerous curve to the right											|
-| 3.61435e-05	      			| Beware of ice/snow					 				|
-| 4.66116e-06				    | Right-of-way at the next intersection      							|
+| 1.0         			| Slippery road   									| 
+| 1.83496e-07     				| Dangerous curve to the right 										|
+| 1.38332e-07					| Dangerous curve to the left											|
+| 2.61066e-08	      			| Road work					 				|
+| 1.9343e-08				    | Road narrows on the right      							|
 
 For the eighth image, the model is relatively sure that this is a "General caution" sign (probability of 1.0), however, the image contains a "Road work" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| General caution   									| 
-| 4.01071e-11     				| Traffic signals 										|
-| 1.04885e-11					| Pedestrians											|
-| 3.73492e-15	      			| Right-of-way at the next intersection					 				|
-| 1.22789e-20				    | Children crossing      							|
+| 0.999998         			| General caution   									| 
+| 1.75829e-06     				| Pedestrians 										|
+| 3.56168e-08					| Road narrows on the right											|
+| 6.63401e-09	      			| Traffic signals					 				|
+| 1.26133e-12				    | Right-of-way at the next intersection      							|
 
 For the ninth image, the model is relatively sure that this is a "Ahead only" sign (probability of 1.0), and the image does contain a "Ahead only" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| Ahead only   									| 
-| 2.57161e-08     				| No vehicles 										|
-| 1.33408e-08					| Turn right ahead											|
-| 8.86282e-09	      			| No passing					 				|
-| 6.03572e-09				    | Turn left ahead      							|
+| 1.66214e-10     				| Turn left ahead 										|
+| 9.78357e-11					| No passing											|
+| 7.36845e-11	      			| Turn right ahead					 				|
+| 2.51478e-11				    |  Priority road     							|
 
 For the tenth image, the model is relatively sure that this is a "General caution" sign (probability of 0.997141), however, the image contains a "Roundabout mandatoryk" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| Go straight or left   									| 
-| 0.00285933     				| Roundabout mandatory 										|
-| 1.51674e-08					| Keep left											|
-| 4.03953e-09	      			| Speed limit (20km/h)					 				|
-| 1.12457e-10				    | Speed limit (30km/h)      							|
+| 0.970637         			| Go straight or left   									| 
+| 0.028735     				| Roundabout mandatory 										|
+| 0.000603467					| Speed limit (30km/h)											|
+| 2.3442e-05	      			| Keep left					 				|
+| 9.98795e-07				    | Road narrows on the right      							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
