@@ -1,0 +1,17 @@
+data
+.ipynb_checkpoints
+*.h5
+models
+*.swp
+*.p
+examples/*.*
+set_git.sh
+signnames.csv
+visualize_cnn.png
+writeup.md
+writeup_template.md
+lenet.meta
+lenet.index
+lenet.data-00000-of-00001
+CODEOWNERS
+checkpoint
